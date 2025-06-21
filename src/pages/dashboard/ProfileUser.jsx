@@ -92,7 +92,7 @@ const ProfileSaya = () => {
 
                 {item.gambar && (
                   <img
-                    src={`http://localhost:5000${item.gambar}`}
+                    src={`https://sipelmasd-production.up.railway.app${item.gambar}`}
                     alt="lampiran"
                     className="mt-2 rounded-lg max-h-48 object-cover"
                   />
