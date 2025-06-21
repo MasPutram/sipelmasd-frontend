@@ -3,8 +3,6 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import axiosInstance from "../../utils/axiosInstance";
 
-
-
 const AddPetugasModal = ({ isOpen, onClose, onSuccess }) => {
   const [form, setForm] = useState({
     fullName: "",
@@ -23,7 +21,9 @@ const AddPetugasModal = ({ isOpen, onClose, onSuccess }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const csrf = await axiosInstance.get("/api/csrf-token");
+      const csrf = await axiosInstance.get("/api/csrf-token", {
+        withCredentials: true,
+      });
 
       const formData = new FormData();
       formData.append("fullName", form.fullName);
@@ -41,6 +41,7 @@ const AddPetugasModal = ({ isOpen, onClose, onSuccess }) => {
             "X-CSRF-Token": csrf.data.csrfToken,
             "Content-Type": "multipart/form-data",
           },
+          withCredentials: true,
         }
       );
 
