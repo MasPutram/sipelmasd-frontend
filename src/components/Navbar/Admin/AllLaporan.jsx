@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 import LaporanDetailModal from "../../Modal/ModalDetailLaporan";
 import getGraphQLClient from "../../../utils/graphClient";
 import { gql } from "graphql-request";
-import axiosInstance from "../../../utils/axiosInstance";
+import { axiosInstance } from "../../../utils/axiosInstance";
+
 
 const LAPORAN_QUERY = gql`
   query {

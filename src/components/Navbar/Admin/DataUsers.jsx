@@ -1,6 +1,7 @@
 // pages/DashboardAdminPengguna.jsx
 import { useEffect, useState } from "react";
-import axiosInstance from "../../../utils/axiosInstance";
+import { axiosInstance } from "../../../utils/axiosInstance";
+
 import AdminSidebar from "./NavbarAdmin";
 import DataTable from "react-data-table-component";
 import { toast } from "react-toastify";

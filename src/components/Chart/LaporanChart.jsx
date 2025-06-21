@@ -7,7 +7,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import axiosInstance from "../../utils/axiosInstance";
+import { axiosInstance } from "../../utils/axiosInstance";
+
 
 const ChartLaporan = () => {
   const [chartData, setChartData] = useState([]);

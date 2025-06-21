@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { toast } from "react-toastify";
-import axiosInstance from "../../utils/axiosInstance";
+import { axiosInstance } from "../../utils/axiosInstance";
+
 import DOMPurify from "dompurify";
 
 const ModalEditProfile = ({ isOpen, setIsOpen, user, setUser }) => {
