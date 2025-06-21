@@ -59,7 +59,7 @@ const DashboardAdmin = () => {
               <img
                 src={
                   user.profileImageUrl
-                    ? `http://localhost:5000${user.profileImageUrl}`
+                    ? `https://sipelmasd-production.up.railway.app${user.profileImageUrl}`
                     : "https://placehold.co/100x100"
                 }
                 alt="Profile"
