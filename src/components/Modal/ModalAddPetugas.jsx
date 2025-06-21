@@ -1,7 +1,8 @@
 // components/Modal/AddPetugasModal.jsx
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { axiosInstance } from "../../utils/axiosInstance";
+import axiosInstance from "../../utils/axiosInstance";
+
 
 
 const AddPetugasModal = ({ isOpen, onClose, onSuccess }) => {
