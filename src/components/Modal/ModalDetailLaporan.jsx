@@ -20,7 +20,7 @@ const LaporanDetailModal = ({
                 {/* Gambar */}
         {laporan.gambar && (
           <img
-            src={`http://localhost:5000${laporan.gambar}`}
+            src={`https://sipelmasd-production.up.railway.app${laporan.gambar}`}
             alt="Gambar Laporan"
             className="w-full h-64 object-cover rounded mb-4"
           />
